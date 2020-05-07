@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Responsive</title>
+
+    <style>
+        div {
+            width: 18%;
+            height: 100px;
+            margin:10px;
+            border:1px solid #dedede;
+            background: red;
+            float: left;
+            position: relative;
+        }
+
+        @media only screen and (max-width: 1000px) {
+            div {
+                width: 45%;
+            }
+            div:nth-child(5) {
+                display: none;   
+            }
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div>SELAM WEBCHEFS</div>
+    <div>SELAM WEBCHEFS</div>
+    <div>SELAM WEBCHEFS</div>
+    <div>SELAM WEBCHEFS</div>
+    <div>SELAM WEBCHEFS</div>
+
+
+</body>
+</html>

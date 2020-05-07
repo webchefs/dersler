@@ -1,0 +1,109 @@
+.content{
+    margin: 0px auto;
+    width: 980px;
+}
+header, main, footer{
+    width: 980px;
+    float: left;
+}
+#mainContent ul.news, #sidebar ul.news{
+    list-style: none;
+}
+#sidebar{
+    width: 300px;
+    float: left;
+}
+#mainContent{
+    width: 650px;
+    float: left;
+}
+#mainContent ul.news li img{
+    width: 300px;
+    height: 190px;
+}
+#mainContent ul.news li{
+    width: 300px;
+    position: relative;
+    float: left;
+    height: 190px;
+    margin: 0 20px 20px 0;
+    padding: 0px;
+    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.27), 0 0 40px rgba(0, 0, 0, 0.06) inset;
+    -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.27), 0 0 40px rgba(0, 0, 0, 0.06) inset;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.27), 0 0 40px rgba(0, 0, 0, 0.06) inset;
+}
+
+#mainContent ul.news li:before,
+#mainContent ul.news li:after{
+    content: '';
+    z-index: -1;
+    left: 10px;
+    bottom: 10px;
+    width: 70%;
+    max-width: 300px; /* avoid rotation causing ugly appearance at large container widths */
+    max-height: 100px;
+    position: absolute;  
+    height: 55%;
+    -webkit-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    -webkit-transform: skew(-15deg) rotate(-6deg);
+    -moz-transform: skew(-15deg) rotate(-6deg);
+    -ms-transform: skew(-15deg) rotate(-6deg);
+    -o-transform: skew(-15deg) rotate(-6deg);
+    transform: skew(-15deg) rotate(-6deg); 
+}
+
+
+#mainContent ul.news li:after{
+    left: auto;
+    right: 10px;
+    -webkit-transform: skew(15deg) rotate(6deg);
+    -moz-transform: skew(15deg) rotate(6deg);
+    -ms-transform: skew(15deg) rotate(6deg);
+    -o-transform: skew(15deg) rotate(6deg);
+    transform: skew(15deg) rotate(6deg); 
+}
+
+#mainContent ul.news{
+    padding: 0;
+    position: relative;
+    z-index: 1; /* prevent shadows falling behind containers with backgrounds */
+    overflow: hidden;
+    margin: 0;
+}
+#mainContent ul.news li a{
+    position: absolute;
+    top:110px;
+    padding: 10px 5px;
+    left:20px;
+    width: 270px;
+    background: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    font-weight: bold;
+    border-top: 2px tomato solid;
+}
+#mainContent ul.news li a:link, #mainContent ul.news li a:visited{
+    color:#535353;
+}
+#mainContent ul.news li a:hover{
+    color:tomato;
+}
+@media only screen and (max-width: 1024px) {
+    .content, header, main, footer, #mainContent, #mainContent ul.news li img{
+        width: 100%;
+    }
+    #mainContent ul.news li{
+        width: 90%;
+        margin:0 5% 20px 5%;
+    }
+}
+#sidebar ul, #sidebar .editor, #sidebar .search{
+    padding: 0px;
+    margin:30px;
+}
+.search input{
+    padding: 3px 10px;
+    border-radius: 3px;
+    border:1px tomato solid;
+}

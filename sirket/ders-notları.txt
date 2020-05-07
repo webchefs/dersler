@@ -1,0 +1,10 @@
+-Takıldığım yerlerde problemime nasıl cevap bulurum? 
+    (translate, google, stackoverflow) 
+
+-Github a kod gönderme/alma
+
+-Responsive nedir (hızlı tekrar)
+
+-Uzun süreli kişisel eylem planı ve önemi
+
+-Javascript tanıtımı (zaman kalırsa)

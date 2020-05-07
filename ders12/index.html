@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JAVASCRIPT</title>
+    <script src="main.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(function(){  // sayfa hazır olduğu zaman çalıştır .
+
+            console.log("SELAM")
+            alert('BENİ KAPAT')
+
+            axios.get('https://reduva.com/users',{
+                crossdomain: true
+            }).then(gelendata => {
+
+
+                console.log(gelendata)
+
+                
+            })
+
+            var aa = "Alihan"
+            var bb = "KOÇ"
+
+            var tamisim = "İsim: " + aa + " " + bb
+
+            var cc = 11
+            var cd = 5
+            var dd = "15"
+
+            var toplam = (cc / cd )+ dd  //10515
+            
+            // TOPLAMA + 
+            // ÇIKARMA -
+            // ÇARPMA * 
+            // BÖLME / 
+            // MOD ALMA %  (KALAN)
+            // ÜS ALMA ** 
+            // SAYIYI 1 ARTTIR ++ 
+            // SAYIYI 1 EKSİLT --
+            
+
+            // KARŞILAŞTIRMA OPERATÖRÜ (EŞİTTİR OPERATORU) == 
+            // KARŞILAŞTIRMA OPERATÖRÜ (DENKTİR OPERATORU) === 
+
+            var bool = false // boolean
+            var sifir = 0 // number
+            
+            var degisken5 = 55;
+
+            if(bool === sifir){
+                console.log('DOGRU')
+            } else {
+                console.log("YANLIS")
+            }
+
+            var degisken = 10-10 
+            
+            if(degisken === 0){
+                console.log("OK")
+            } else {
+                console.log("NOT")
+            }
+                   
+            var mod = cc%cd
+            var az = 10
+            az++
+
+            // FALSE ve 0 eşittir ama denk değildir. 
+
+            var ilk = 5
+            var ikinci = 5
+            if(ilk >=  ikinci ){
+                alert(ilk + ' -> ' + ikinci+ '\'den büyüktür veya eşittir.')
+            } else {
+                alert('Küçüktür')
+            }
+
+
+            /////////////////////////////////////
+            //  || yada operatoru
+            //  && ve operatoru
+            //  !  değil operatoru (tam tersini temsil etttirir) 
+
+            var a1 = false
+            var a2 = true 
+            
+            if( !a1 && a2) {     // ya da 
+                alert('OK')
+            } else {
+                alert('NO')
+            }
+
+            var obj = {"asdfasd":a1, "sadfasd":a2}
+            var diziler = ["sdaf","asdf","sadf"]
+
+            console.log( typeof(obj) )
+
+            console.log( typeof(diziler) )
+
+        })
+    </script>
+</head>
+<body>
+
+</body>
+</html>

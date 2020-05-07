@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <style>
+    * {box-sizing:border-box}
+
+    /* Slideshow container */
+    .slideshow-container {
+        max-width: 1000px;
+        position: relative;
+        margin: auto;
+    }
+
+    /* Hide the images by default */
+    .mySlides {
+        display: none;
+    }
+
+    /* Next & previous buttons */
+    .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        margin-top: -22px;
+        padding: 16px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+    }
+
+    /* Position the "next button" to the right */
+    .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+    }
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover, .next:hover {
+        background-color: rgba(0,0,0,0.8);
+    }
+
+    /* Caption text */
+    .text {
+        color: #f2f2f2;
+        font-size: 15px;
+        padding: 8px 12px;
+        position: absolute;
+        bottom: 8px;
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Number text (1/3 etc) */
+    .numbertext {
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+    }
+
+    .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+    }
+
+    .active, .dot:hover {
+        background-color: #717171;
+    }
+
+    </style>
+</head>
+<body>
+    <div id="electric-cars" data-columns="3" data-index-number="12314" data-parent="cars">
+        Hello World
+    </div>
+    <ul>
+        <li data-animal-type="bird">Owl</li>
+        <li data-animal-type="fish">Salmon</li>
+        <li data-animal-type="spider">Tarantula</li>
+    </ul>
+
+    <ul id="deneme">
+
+    </ul>
+
+
+
+    <div class="slideshow-container">
+    
+        <div class="mySlides">
+            <div class="numbertext">1 / 3</div>
+            <img src="1.jpg" style="width:100%">
+            <div class="text">Caption Text</div>
+        </div>
+    
+        <div class="mySlides">
+            <div class="numbertext">2 / 3</div>
+            <img src="2.jpg" style="width:100%">
+            <div class="text">Caption Two</div>
+        </div>
+    
+        <div class="mySlides">
+            <div class="numbertext">3 / 3</div>
+            <img src="3.jpg" style="width:100%">
+            <div class="text">Caption Three</div>
+        </div>
+    
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+
+
+    <br>
+    
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+    <script>
+
+        $(function(){
+
+            var gonderilecekdata = {
+                "isim":"İsim",
+                "soyisim":"Soyisim"
+            }
+
+            $.ajax(
+                {
+                    type:"POST",
+                    data:gonderilecekdata,
+                    url:"https://jsonplaceholder.typicode.com/posts",
+                    dataType:"json",
+                    success(s){
+                        console.log(s)
+                    },
+                    error(e){
+                        console.log("Hata oldu")
+                        console.log(e)
+                    }
+                }
+            )
+            $.ajax(
+                {
+                    type:"GET",
+                    url:"https://jsonplaceholder.typicode.com/users",
+                    dataType:"json",
+                    success(users){
+                        users.forEach(function(user){
+                            $("#deneme").append("<li>"+user.name+"</li>")
+                        })
+                    },
+                    error(e){
+                        console.log("Hata oldu")
+                        console.log(e)
+                    }
+                }
+            )
+
+
+        })
+
+        // document.addEventListener("DOMContentLoaded",function(){
+
+        //     var article = document.querySelector('#electric-cars');
+
+        //     article.addEventListener("click",function(){
+        //         var indexNumber = this.dataset.indexNumber
+        //         console.log(indexNumber + " - bu düz js den geldi. ")
+        //     })
+
+        //     $("#electric-cars").click(function(){
+        //         var iNumber = $(this).data("index-number")
+        //         console.log(iNumber + " - Bu jquery den geldi.")
+        //     })
+
+
+        //     // Callback hell!
+        //     sayHello("Alihan",function(sentence){
+        //         console.log(sentence)
+        //         console.log("Good Morning!")
+
+        //     })
+        //     // async/await - promise 
+        //     function sayHello(name, callback) {
+        //         var data = "Hello " + name + "!"
+        //         setTimeout(function(){
+        //             return callback(data)
+        //         },2500)
+        //     }
+
+        // })
+
+        // document.addEventListener("DOMContentLoaded", function () {
+        //     var article = document.querySelector('#electric-cars');
+        //     console.log(article.dataset.columns) // "3"
+        //     console.log(article.dataset.indexNumber) // "12314"
+        //     console.log(article.dataset.parent) // "cars"
+        //     sayHello("Alihan", function (reply) {
+        //         console.log(reply)
+        //     })
+        //     console.log(1)
+        //     setTimeout(function(){
+        //         console.log(2)
+        //     },2500)
+        //     console.log(3)
+        // })
+
+        // function sayHello(name, callback) {
+        //     var data = "hello " + name
+        //     return callback(data)
+        // }
+
+        var slideIndex = 1;
+        
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+  
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { 
+                slideIndex = 1 
+                
+            }
+
+            if (n < 1) { 
+                slideIndex = slides.length 
+               
+            }
+
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+
+
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+
+        //setInterval()
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,314 @@
+Bootstrap 
+------------------------------------------
+https: //getbootstrap.com/
+
+* mobile-first &
+* responsive bir yapıya sahiptir.
+* <meta name = "viewport" content = "width=device-width, initial-scale=1">
+
+
+Eklenti
+-----------------------------
+IntelliSense for CSS class names in HTML
+
+
+Font & Text
+-----------------------------
+h1: 2.5rem,
+h2: 2rem,
+h3: 1.75rem,
+h4: 1.5rem,
+h5: 1.25rem,
+h6: 1rem
+1 rem değeri 16px
+
+<h1>H1 Başlık</h1>
+
+<h1>H1 Başlık <small> alt başlık </small></h1>
+<h1>H1 Başlık <small class="text-muted"> alt başlık </small></h1>
+<p class="h1">H1 Başlık</p>
+
+<h1 class="display-1">Büyük Başlık 1</h1>
+<h1 class="display-2">Büyük Başlık 2</h1>
+<h1 class="display-3">Büyük Başlık 3</h1>
+<h1 class="display-4">Büyük Başlık 4</h1>
+
+text-lowercase
+text-uppercase
+text-capitalize
+
+font-weight-bold
+font-weight-light
+font-weight-bold
+
+
+Text Hizalama
+-----------------------------
+text-justify
+text-left
+text-center
+text-right
+
+<blockquote class="blockquote text-right">		
+  <p>METİN</p>
+  <footer class="blockquote-footer">Footer Metin</footer>
+</blockquote>
+
+
+span class="d-block"
+div class="d-inline"
+          d-none    // Sayfada Yer Kaplamaz.
+          invisible // Sayfada Yer Kaplar ancak görünmez
+
+
+Renkler 
+-----------------------------
+primary
+secondary
+success
+danger
+warning
+info
+light
+dark
+muted
+white
+
+<br />
+
+<div class="bg-primary">bg-primary</div>
+<div class="bg-warning">bg-warning</div>
+<div class="bg-success">bg-success</div>
+
+<br /><br />
+
+1.) .*-primary 
+2.) .*-success
+3.) .*-info
+4.) .*-warning
+5.) .*-danger
+6.) .*-secondary
+7.) .*-dark
+8.) .*-light.
+9.) .*-white
+10.) .*-body
+** Eğer yazı için kullanıyorsak renk isimlerinin başına "text-" gelmelidir.
+** Eğer arkaplan için kullanıyorsak renk isimlerinin başına "bg-" gelmelidir.
+** Eğer buton için kullanıyorsak renk isimlerinin başına "btn-" gelmelidir.
+** Eğer border rengi için kullanıyorsak renk isimlerinin başına "border-" gelmelidir.
+
+
+Butonlar
+-----------------------------
+primary
+danger
+secondary
+success
+warning
+info
+light
+dark
+link
+
+btn-outline-primary
+
+btn-lg
+btn-sm
+
+btn-block
+active / disabled
+
+<div class="btn-group">
+</div>
+
+
+<div class="btn-group-vertical">
+</div>
+
+
+** Farklı renk sınıflarını kullanabiliriz. Örneğin; btn-warning, btn-danger
+** Outline butonu oluşturmak için .btn-outline-primary şeklinde kullanım yapmalıyız.
+** Küçük bir buton için .btn-sm, büyük bir buton için ise .btn-large sınıfını kullanmalıyız.
+** Satırı olduğu gibi kaplayan block bir buton oluşturmak için .btn-block sınıfını eklemeliyiz. ** butonlar için .active ve .disabled sınıflarını kullanabiliriz.
+
+
+Margin & Padding
+-----------------------------
+margin (m) (0,1,2,3,4,5) m-0, m-1
+
+margin-right => mr
+margin-left => ml
+margin-top => mt
+margin-bottom => mb
+
+margin-top, margin-bottom => my
+margin-left, margin-right => mx
+
+
+padding (p) (0,1,2,3,4,5) p-0, p-1, ... p-5
+
+padding-right => pr
+padding-left => pl
+padding-top => pt
+padding-bottom => pb
+
+padding-top, padding-bottom => py
+padding-left, padding-right => px
+
+** Margin ve padding için kullanabileceğimiz köşeleri temsil eden sınıflar t - margin-top veya padding-top
+b -margin-bottom veya padding-bottom
+l - margin-left veya padding-left
+r - margin-right veya padding-right
+x - padding-left and padding-right yada margin-left and margin-right
+y - padding-top and padding-bottom veya margin-top and margin-bottom
+** margin ve padding için uygulanacak ölçüler için aşağıdaki ölçülendirme tiplerini kullanıyoruz.
+0 - margin yada padding 0 olur.
+1 - margin yada padding .25rem (4px)
+2 - sets margin yada padding .5rem (8px)
+3 - sets margin yada padding 1rem (16px)
+4 - sets margin yada padding 1.5rem (24px) 5 - sets margin yada padding 3rem (48px)
+
+
+Border
+-----------------------------
+
+<div class="bg-light mt-2 p-4 border-top">DİV</div>
+<div class="bg-light mt-2 p-4 border border-0">DİV</div> hiç vermemiş gibi olur
+<div class="bg-light mt-2 p-4 border border-top-0">DİV</div>
+
+border-primary
+border-secondary
+border-danger
+
+rounded
+rounded-top
+rounded-bottom
+
+shadow 
+shadow-sm 
+shadow-lg 
+
+
+Tablolar
+-----------------------------
+table > thead / tbody > tr > th / td 
+
+
+table
+table-dark
+table-light
+table-striped
+table-hover
+table-bordered / unbordered
+table-primary/secondary ......
+table-responsive (div içinde kullan.)
+table-sm
+
+** .table sınıfı ile tabloya bir padding ve yatay çizgiler eklemiş oluruz. .table-striped ile her satırın arka planı gri-beyaz şeklinde oluşturulur. .table-bordered ile hücrelere kenarlık eklenir.
+** .table-hover, hover olayı ile her satır üzerindeyken arka plan farklılaşır.
+** .table-* ile farklı renkte tablo oluşturabiliriz. Örneğin; ** .table-dark, .table-primary .bg-* şeklinde arkaplan renklerini tablolar için kullanabiliriz.
+** .table-sm ile padding değeri düşük olan küçük bir tablo oluşur. .table-responsive sınıfına sahip bir div içine aldığımız tablo responsive olur.
+
+
+Listeler
+-----------------------------
+
+list-unstyled
+
+	<ul class="list-inline">
+		<li class="list-inline-item">Lorem ipsum.</li>
+		<li class="list-inline-item">Lorem ipsum.</li>
+		<li class="list-inline-item">Lorem ipsum.</li>
+	</ul>
+
+ul > list-group
+li > list-group-item
+
+active
+disabled
+list-group-flush // left & right borderless
+list-group-horizontal
+list-group-item-primary
+list-group-item-secondary ......
+
+
+Alert
+-----------------------------
+<div class="alert alert-primary mb-3">
+  Lorem ipsum dolor sit amet.
+</div>
+
+alert
+alert-primary
+alert-secondary.....
+alert-link
+
+div > h3 + p + hr + p
+
+<div class="alert alert-danger mb-3">
+  Lorem ipsum dolor sit amet.
+  <a class="alert-link" href="">link text</a>
+</div>
+
+alert-dismissable // kapanabilen
+fade // kapanma solma efekti
+show // sayfa açılışında gözükmesini sağlar
+
+<div class="alert alert-warning alert-dismissible fade show">
+  Lorem ipsum dolor sit amet.
+  <button type="button" class="close" data-dismiss="alert">
+    <span>X</span>
+  </button>
+</div>
+
+
+Photos
+-----------------------------
+rounded
+rounded-circle
+img-thumbnail
+img-fluid // responsive. küçülür. orjinal boyutun üstünde büyümez
+
+
+Formlar
+-----------------------------
+form > form-group
+input > form-control
+small > form-text
+select > form-control > option 
+
+Grid
+-----------------------------
+
+** .container sınıfı ile içeriği her bir breakpoint aralığında bir genişlik vermiş oluyoruz ve içerik sağdan soldan eşit boşluklara sahip olur. Aslında yaptığımız örneğin tarayıcı genişliğinin 1200px olduğu durumda içeriği 1000px yapıp kalan 200px’i sağdan soldan 100px olarak dağıtıp ortalamaktır.
+** .container-fluid sınıfı ile içeriği tarayıcının o anki genişliği kadar yapıp (100%) sağdan soldan biraz padding değeri veriyoruz.
+** Her bir satır .row sınıfı ile oluşturulur.
+** Her bir kolon .col sınıfı ile oluşturulur.
+** Her bir satırda en fazla 12 kolon bulunur.
+** Eşit genişlikte kolon oluşturmak için .col sınıfı kullanılır.
+** Farklı genişlikte kolon oluşturmak için .col-* şeklinde sayısal ifade kullanılır. (col-5, col-7) ** Toplam 12 kolonu geçen blok olduğu gibi alt satıra iner.
+
+Her breakpoint aralığını bir sınıf ismi ile temsil edebiliyoruz.
+ekstra small (576px’ in altında) – bir sınıf ismi yok. small (.sm: 576px – 767px)
+medium (.md: 768px – 991px)
+large (.lg: 992px – 1199px)
+extra large (.xg: 1200px ve üstü)
+** small çözünürlük aralığında responsive olarak bir kolonu col-sm-* şeklinde oluştururuz. sm cihaz aralığı yani 576px’ in altına indiği anda kolonlar satırı olduğu gibi kaplar ve alt alta gelirler. Ancak sm cihaz çözünürlüğü dahil üstündeki tüm çözünürlüklerde yan yana olurlar.
+** medium cihazlar için col-md-* şeklinde kolon oluştururuz. md cihazın altında eğer ki sm cihaz için bir tanımlama yoksa kolonlar alt alta gelirler.
+** large cihazlar için col-lg-* şeklinde kolon oluştururuz. lg cihazın altındaki md, sm cihaz için bir tanımlama yoksa kolonlar alt alta gelirler.
+** extra large cihazlar için col-lg-* şeklinde kolon oluşturuyoruz. xl cihazın altındaki lg, md, sm tanımlaması yoksa kolonlar alta gelirler.
+** Kolonların hiçbir çözünürlükte alt alta gelmesini istemiyorsanız .col sınıfı ile tanımlama yapmalısınız.
+
+
+
+// Small Cihazlar (landscape phones, 576px and up)
+@media (min-width: 576px) {sm}
+
+// Medium Cihazlar (tablets, 768px and up) 
+@media (min-width: 768px) {md}
+
+// Large Cihazlar (desktops, 992px and up)
+@media (min-width: 992px) {lg}
+
+// Extra Large Cihazlar (large desktops, 1200px and up) 
+@media (min-width: 1200px) {xl}

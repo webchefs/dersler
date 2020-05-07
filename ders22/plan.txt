@@ -1,0 +1,7 @@
+If-else 
+Switch-case
+Döngüler
+    for döngüsü
+    foreach döngüsü
+    while döngüsü
+    try catch / exception

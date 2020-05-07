@@ -1,0 +1,6 @@
+﻿Değişkenler, veri tipleri ve sabitler
+Operatörler
+    Atama operatörleri
+    Karşılaştırma operatörleri
+    Aritmetik operatörleri
+    Mantıksal operatörler

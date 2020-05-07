@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+    th,td {
+        border:1px solid #dedede;
+    }
+    </style>
+</head>
+
+<body>
+    <!--
+        input 
+        -------
+        - autocomplete / on, off
+        - checked
+        - disabled
+        - selected 
+        - max, min, maxlength, minlength
+        - name
+        - readonly
+        - required 
+        - value
+        - type / date, datetime, hidden, email, file, text, number, tel, time, date, datetime
+        - name
+
+    -->
+
+    <form action="https://webchefs.club/test/form-test.php" target="_blank" method="post" 
+    
+    enctype="multipart/form-data"
+    
+    >
+        <label for="isim">İsim</label><br>
+        <input type="text" placeholder="İsminizi giriniz" autocomplete="off" minlength="10" id="isim" name="isim"><br><br>
+
+        <label for="soyisim">Soyisim</label><br>
+        <input type="text" readonly required value="Şeker" id="soyisim" name="soyisim"><br><br>
+
+        <label for="eposta">Eposta</label><br>
+        <input type="email" id="eposta" required name="eposta"><br><br>
+
+        <label for="yas">Yaş</label><br>
+        <input type="number" max="80" id="yas" name="yas"><br><br>
+
+        <label for="dogum">Doğum Tarihi</label><br>
+        <input type="date" id="dogum" name="dogum"><br><br>
+
+        <label for="saat">Saat Kaç</label><br>
+        <input type="time" id="saat" name="saat"><br><br>
+
+        <label for="ucak">Ucak Kalkış</label><br>
+        <input type="datetime-local" id="ucak" name="ucak"><br><br>
+        
+        <input type="hidden" id="token" value="12345" name="token">
+
+        <label for="resim">Resim</label><br>
+        <input type="file" id="resim" name="resim"><br><br>
+
+        <label for="sifre">Şifre</label><br>
+        <input type="password" id="sifre" name="sifre"><br><br>
+
+
+        <label for="sehir">Şehir</label><br>
+        <select name="sehir" id="sehir">
+            <option selected="selected" disabled="disabled">Seçiniz</option>
+            <option value="34">İstanbul</option>
+            <option selected value="06">Ankara</option>
+            <option value="81">Düzce</option>
+            <option value="45">Manisa</option>
+        </select>
+        <br><br>
+
+        <label for="mesaj">Mesaj</label><br>
+        <textarea name="mesaj" id="mesaj">  asdşlfkaşskdflşk  </textarea>
+        <br><br>
+
+        <label for="butce">Bütçe</label><br>
+        <span>0</span><input type="range" id="butce" step="10" min="0" max="100" name="butce" value="50"><span>100</span>
+        <br><br>
+
+
+        <label for="browsers">Tarayıcı</label><br>
+        <input name="tarayici" list="browsers">
+        <datalist id="browsers">
+            <option value="Internet Explorer">
+            <option value="Firefox">
+            <option value="Chrome">
+            <option value="Opera">
+            <option value="Safari">
+        </datalist>
+        <br><br>
+
+        <label>Cinsiyet</label><br>
+        <label for="c1"><input type="radio" value="Erkek" name="cinsiyet" id="c1">Erkek</label>
+        <label for="c2"><input type="radio" value="Kadın" name="cinsiyet" id="c2">Kadın</label>
+        <label for="c3"><input type="radio" checked value=" " name="cinsiyet" id="c3">Bilinmiyor</label>
+        <br><br>
+        <label>Hobiler</label><br>
+        <label for="h1"><input type="checkbox" value="Spor" name="hobiler[]" id="h1">Spor</label>
+        <label for="h2"><input type="checkbox" checked value="Müzik" name="hobiler[]" id="h2">Müzik</label>
+        <label for="h3"><input type="checkbox" value="Kitap" name="hobiler[]" id="h3">Kitap</label>
+        <br><br>
+        <input type="submit" value="Gönder">
+        <input type="reset" value="Sıfırla">
+        <input type="button" value="Bişey Yapma">
+    </form>
+
+
+</body>
+
+</html>

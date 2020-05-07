@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Webchefs Ders 19 - Bootstrap</title>
+    <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.css" />
+    <style>
+      body {
+        padding: 20px;
+      }
+      div {
+        margin-top: 20px;
+      }
+      .alt {
+        margin-top: 500px;
+      }
+      img {
+        width: 300px;
+      }
+    </style>
+  </head>
+  <body>
+    Fonts & Text <br />
+    -----------------------------
+    <hr />
+    <br />
+    <h1>H1 Başlık</h1>
+
+    <h1>H1 Başlık <small> alt başlık </small></h1>
+    <h1>H1 Başlık <small class="text-muted"> alt başlık </small></h1>
+    <p class="h1">H1 Başlık</p>
+
+    <h1 class="display-1">Büyük Başlık 1</h1>
+    <h1 class="display-2">Büyük Başlık 2</h1>
+    <h1 class="display-3">Büyük Başlık 3</h1>
+    <h1 class="display-4">Büyük Başlık 4</h1>
+
+    <br />
+
+    <p class="text-lowercase">KÜÇÜK HARFE ÇEVİR</p>
+    <p class="text-uppercase">büyük harfe çevir</p>
+    <p class="text-capitalize">küçük harf</p>
+
+    <br />
+
+    <p class="font-weight-bold">küçük harf</p>
+    <p class="font-weight-light">küçük harf</p>
+    <p class="font-weight-bold">küçük harf</p>
+
+    <br /><br />
+    Renkler <br />
+    -----------------------------
+    <hr />
+    <br />
+    <p class="text-primary">text-primary</p>
+    <p class="text-secondary">text-secondary</p>
+    <p class="text-success">text-success</p>
+    <p class="text-danger">text-danger</p>
+    <p class="text-warning">text-warning</p>
+    <p class="text-info">text-info</p>
+    <p class="text-light bg-dark">text-light</p>
+    <p class="text-dark">text-dark</p>
+    <p class="text-muted">text-muted</p>
+    <p class="text-white bg-dark">text-white</p>
+
+    <br />
+
+    <div class="bg-primary">bg-primary</div>
+    <div class="bg-warning">bg-warning</div>
+    <div class="bg-success">bg-success</div>
+
+    <br /><br />
+
+    Butonlar <br />
+    -----------------------------
+    <hr />
+    <br />
+    <button class="btn btn-primary" type="button">Primary</button>
+    <button class="btn btn-danger" type="button">danger</button>
+    <button class="btn btn-secondary" type="button">secondary</button>
+    <button class="btn btn-success" type="button">success</button>
+    <button class="btn btn-warning" type="button">warning</button>
+    <button class="btn btn-info" type="button">info</button>
+    <button class="btn btn-light" type="button">light</button>
+    <button class="btn btn-dark" type="button">dark</button>
+    <button class="btn btn-link" type="button">link</button>
+
+    <button class="btn btn-outline-primary" type="button">Primary</button>
+
+    <button class="btn btn-outline-primary btn-lg" type="button">
+      Primary
+    </button>
+    <button class="btn btn-outline-primary btn-sm" type="button">
+      Primary
+    </button>
+
+    <button class="btn btn-primary btn-lg btn-block" type="button">
+      Primary
+    </button>
+    <button class="btn btn-info btn-lg btn-block" type="button">Primary</button>
+
+    <button class="btn btn-danger active" type="button">Primary</button>
+
+    <button class="btn btn-danger disabled" type="button">Primary</button>
+
+    <div class="btn-group">
+      <button class="btn btn-primary" type="button">Primary</button>
+      <button class="btn btn-danger" type="button">danger</button>
+      <button class="btn btn-success" type="button">secondary</button>
+    </div>
+    <div class="btn-group-vertical">
+      <button class="btn btn-primary" type="button">Primary</button>
+      <button class="btn btn-danger" type="button">danger</button>
+      <button class="btn btn-success" type="button">secondary</button>
+    </div>
+
+    Margin & Padding <br />
+    -----------------------------
+    <hr />
+    <br />
+    <button class="btn btn-success ml-5 py-3 px-5" type="button">
+      Padding
+    </button>
+
+    <div class="bg-light mt-2 p-4 border border-primary rounded w-25"></div>
+
+    <div class="bg-success mt-2 p-4 w-25"></div>
+    <div class="bg-success mt-2 p-4 w-50"></div>
+    <div class="bg-success mt-2 p-4 w-75"></div>
+    <div class="bg-success mt-2 p-4 w-100"></div>
+    <br /><br />
+    <blockquote class="blockquote text-right">
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+      <footer class="blockquote-footer">Footer Metni</footer>
+    </blockquote>
+    <table class="table table-success table-hover table-responsive">
+      <thead class="bg-primary">
+        <tr>
+          <th>#</th>
+          <th>Name</th>
+          <th>Surname</th>
+          <th>Email</th>
+          <th>Email</th>
+          <th>Email</th>
+          <th>Email</th>
+          <th>Email</th>
+          <th>Email</th>
+          <th>Email</th>
+          <th>Email</th>
+          <th>Email</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="bg-warning">
+          <td>1</td>
+          <td class="table-danger text-white">Ahmet</td>
+          <td>Yılmaz</td>
+          <td>abc@gmail.com</td>
+          <td>abc@gmail.com</td>
+          <td>abc@gmail.com</td>
+          <td>abc@gmail.com</td>
+          <td>abc@gmail.com</td>
+          <td>abc@gmail.com</td>
+          <td>abc@gmail.com</td>
+          <td>abc@gmail.com</td>
+          <td>abc@gmail.com</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Sena</td>
+          <td>Yılmaz</td>
+          <td>abc@gmail.com</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Çınar</td>
+          <td>Yılmaz</td>
+          <td>abc@gmail.com</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Ada</td>
+          <td>Yılmaz</td>
+          <td>abc@gmail.com</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <ul class="list-inline">
+      <li>Lorem ipsum dolor sit amet.</li>
+      <li>Lorem ipsum dolor sit amet.</li>
+      <li>Lorem ipsum dolor sit amet.</li>
+      <li>Lorem ipsum dolor sit amet.</li>
+    </ul>
+
+    <ul class="list-group list-group-horizontal">
+      <li class="list-group-item list-group-item-primary">
+        Lorem ipsum dolor.
+      </li>
+      <li class="list-group-item list-group-item-secondary">
+        Lorem ipsum dolor.
+      </li>
+      <li class="list-group-item list-group-item-success">
+        Lorem ipsum dolor.
+      </li>
+      <li class="list-group-item list-group-item-danger">Lorem ipsum dolor.</li>
+      <li class="list-group-item list-group-item-warning">
+        Lorem ipsum dolor.
+      </li>
+    </ul>
+
+    <div class="alert alert-primary mb-3">
+      Lorem ipsum dolor sit amet.
+    </div>
+    <div class="alert alert-danger mb-3">
+      Lorem ipsum dolor sit amet.
+    </div>
+
+    <div class="alert alert-primary mb-3">
+      Lorem ipsum dolor sit amet.
+      <a class="alert-link" href="">link text</a>
+    </div>
+    <div class="alert alert-secondary mb-3">
+      Lorem ipsum dolor sit amet.
+      <a class="alert-link" href="">link text</a>
+    </div>
+
+    <div class="alert alert-primary">
+      <h4>Lorem ipsum dolor.</h4>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum aliquid
+        quaerat iure aspernatur impedit ipsum, vitae, consequuntur voluptates
+        quam quidem cum odit rerum. Minus delectus laborum, quo quis tempore
+        magnam.
+      </p>
+      <hr />
+      <p class="mb-0">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi
+        rerum aut blanditiis illo, saepe quis, voluptates nam provident.
+        Eveniet, tenetur!
+      </p>
+    </div>
+    <div class="alert alert-warning">
+      <h4>Lorem ipsum dolor.</h4>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum aliquid
+        quaerat iure aspernatur impedit ipsum, vitae, consequuntur voluptates
+        quam quidem cum odit rerum. Minus delectus laborum, quo quis tempore
+        magnam.
+      </p>
+      <hr />
+      <p class="mb-0">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi
+        rerum aut blanditiis illo, saepe quis, voluptates nam provident.
+        Eveniet, tenetur!
+      </p>
+    </div>
+
+    <div class="alert alert-success alert-dismissible fade show">
+      Lorem ipsum dolor sit amet.
+      <button type="button" class="close" data-dismiss="alert">
+        <span>x</span>
+      </button>
+    </div>
+
+    <img src="1.png" class="img-thumbnail" />
+    <img src="2.png" class="rounded-bottom" />
+    <img src="3.png" class="rounded-circle" />
+    <img src="4.png" class="img-fluid" />
+    <br> <hr> <br>
+    <form class="form-group w-75">
+      <label for="isim">Adınız Soyadınız</label>
+      <input
+        class="form-control"
+        type="text"
+        id="isim"
+        placeholder="İsminizi Giriniz"
+      />
+    </form>
+    <form class="form-group w-75">
+      <label for="eposta">E-Posta Adresiniz</label>
+      <input
+        class="form-control"
+        type="email"
+        id="eposta"
+        placeholder="Epostanızı Giriniz"
+      />
+    </form>
+    <div class="form-group w-75">
+      <label for="password">Şifreniz</label>
+      <input
+        class="form-control"
+        type="password"
+        id="password"
+        placeholder="Şifrenizi Giriniz"
+      />
+      <small class="form-text">Lütfen Geçerli Şifre Giriniz.</small>
+    </div>
+    <div class="form-group w-75">
+      <label for="Sehir">Yaşadığınız Şehir</label>
+      <select name="Sehir" id="sehir" class="form-control">
+        <option value="06">Ankara</option>
+        <option value="35">İzmir</option>
+        <option value="45">Manisa</option>
+        <option value="45">Manisa</option>
+        <option value="45">Manisa</option>
+        <option value="45">Manisa</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <legend>Hobies</legend>
+
+      <div class="form-check">
+        <label class="form-check-label">
+          <input type="checkbox" /> Running
+        </label>
+      </div>
+
+      <div class="form-check">
+        <label class="form-check-label">
+          <input type="checkbox" /> Football
+        </label>
+      </div>
+
+      <div class="form-check">
+        <label class="form-check-label">
+          <input type="checkbox" /> Reading
+        </label>
+      </div>
+    </div>
+
+    <form action="" class="form-group">
+      <label for="texxt">
+        
+      </label>
+    </form>
+
+
+
+
+    
+
+    <div class="alt"></div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="bootstrap-4.3.1-dist/js/bootstrap.bundle.js.map"></script>
+    <script src="bootstrap-4.3.1-dist/js/bootstrap.js"></script>
+  </body>
+</html>
